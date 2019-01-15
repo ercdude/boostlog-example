@@ -1,0 +1,10 @@
+[requires]
+boost_log/1.69.0@bincrafters/stable
+
+[generators]
+cmake
+
+[imports]
+# Hard-coding to /bin/Release for convenience
+# conanfile.py solves this issue, don't know how to do the same here yet
+bin, *.dll -> ./bin/Release
